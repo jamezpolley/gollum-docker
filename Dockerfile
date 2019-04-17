@@ -11,5 +11,5 @@ RUN gem install github-linguist && \
     gem install RedCloth && \
     pip install --upgrade pip docutils
 WORKDIR /wiki
-ENTRYPOINT ["gollum", "--port", "80", "--allow-uploads", "dir", "--mathjax", "--show-all"]
-EXPOSE 80
+ENTRYPOINT ["gollum", "--port", "4567", "--allow-uploads", "dir", "--mathjax", "--show-all"]
+EXPOSE 4567
