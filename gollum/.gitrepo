@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/gollum/gollum.git
+	branch = 5.x
+	commit = af344c1d2596cdc0588b361d6fd8cd01e4abea1b
+	parent = d70dad3440664b8a581c2bb72efd4fbf240f1f3d
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,11 @@
+coverage
+pkg
+.DS_Store
+.bundle
+Gemfile.lock
+*.gem
+*.swp
+.*
+lib/gollum/public/gollum/stylesheets/*.css
+lib/gollum/public/gollum/stylesheets/*.css.map
+!lib/gollum/public/gollum/stylesheets/_styles.css
