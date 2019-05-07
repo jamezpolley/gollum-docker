@@ -20,4 +20,4 @@ stable:
 	git push --tags origin master
 
 run:
-	docker run -u $(USER) --rm -v $(CURDIR):/wiki $(GITCONFIG) -p 4567 tchaypo/gollum --live-preview
+	docker run -u $(USER) --rm -v $(CURDIR):/wiki $(GITCONFIG) -p 4567 tchaypo/gollum

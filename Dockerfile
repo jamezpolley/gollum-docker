@@ -4,9 +4,11 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/* && \
     pip install --upgrade pip docutils && \
     gem update
-COPY Gemfile .
+COPY gollum/ gollum/
+WORKDIR /gollum
 RUN gem install -g Gemfile && \
+    rake install && \
     pip install --upgrade pip docutils
 WORKDIR /wiki
-CMD ["gollum", "--port", "4567", "--allow-uploads", "dir", "--mathjax", "--show-all"]
+CMD ["gollum", "--port", "4567", "--allow-uploads", "dir", "--mathjax", "--show-all", "--live-preview"]
 EXPOSE 4567
